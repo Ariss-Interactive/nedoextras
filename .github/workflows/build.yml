@@ -22,7 +22,7 @@ jobs:
       - name: make devel
         run: mkdir devel
       - name: download eden ring
-        run: wget https://cdn.modrinth.com/data/EMl3XyUs/versions/nifo2OxY/eden-ring-20.1.20.jar devel/eden-ring.jar
+        run: wget https://cdn.modrinth.com/data/EMl3XyUs/versions/nifo2OxY/eden-ring-20.1.20.jar -O devel/eden-ring.jar
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: build
