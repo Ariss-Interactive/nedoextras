@@ -1,0 +1,12 @@
+{
+  "type": "edenring:edenring",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": 0,
+      "features": 0,
+      "layers": []
+    }
+  }
+}

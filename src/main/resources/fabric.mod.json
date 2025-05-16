@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "nedoextras",
+	"version": "${version}",
+	"name": "Nedoextras",
+	"description": "Extras mod for nedoserver.",
+	"authors": [
+		"Ariss Interactive"
+	],
+	"contact": {
+		"homepage": "https://ar-iss.net/",
+		"sources": "https://github.com/Ariss-Interactive/nedoextras-pre21"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nedoextras/icon.png",
+	"environment": "*",
+	"accessWidener": "nedoextras.accesswidener",
+	"entrypoints": {
+		"main": [
+			"ariss.nedoextras.Nedoextras"
+		],
+		"client": [
+			"ariss.nedoextras.NedoextrasClient"
+		]
+	},
+	"mixins": [
+		"nedoextras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
