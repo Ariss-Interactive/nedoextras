@@ -4,6 +4,7 @@ import ariss.nedoextras.commands.CommandRegistrar;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -25,6 +26,7 @@ public class Nedoextras implements ModInitializer {
     @Override
     public void onInitialize() {
         CommandRegistrationCallback.EVENT.register((dispatcher, commandRegistryAccess, registrationEnvironment) -> CommandRegistrar.registerCommands(dispatcher));
+        EntityElytraEvents.ALLOW.register((entity) -> false);
 
         RegistryStuff.init();
     }

@@ -3,6 +3,8 @@
   "package": "ariss.nedoextras.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "EnderChestMixin",
+    "EndPortalMixin",
     "EntityDamageMixin",
     "MessageCommandMixin",
     "PlayerManagerMixin",
